@@ -3,27 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		09D7B62629A4982F0018D1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B62529A4982F0018D1E3 /* AppDelegate.swift */; };
 		09D7B62829A4982F0018D1E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B62729A4982F0018D1E3 /* SceneDelegate.swift */; };
-		09D7B62A29A4982F0018D1E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B62929A4982F0018D1E3 /* ViewController.swift */; };
-		09D7B62D29A4982F0018D1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D7B62B29A4982F0018D1E3 /* Main.storyboard */; };
 		09D7B62F29A498300018D1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D7B62E29A498300018D1E3 /* Assets.xcassets */; };
 		09D7B63229A498300018D1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D7B63029A498300018D1E3 /* LaunchScreen.storyboard */; };
+		09D7B63E29A49B850018D1E3 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B63D29A49B850018D1E3 /* StoryboardLoadable.swift */; };
+		09D7B64029A49B960018D1E3 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B63F29A49B960018D1E3 /* Presentable.swift */; };
+		09D7B64229A49BA20018D1E3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B64129A49BA20018D1E3 /* Coordinator.swift */; };
+		09D7B64429A49BB20018D1E3 /* TabBarPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B64329A49BB20018D1E3 /* TabBarPresentable.swift */; };
+		09D7B64729A49BF30018D1E3 /* NSObject + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B64629A49BF30018D1E3 /* NSObject + Extension.swift */; };
+		09D7B64C29A49D360018D1E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B64B29A49D360018D1E3 /* BaseViewController.swift */; };
+		09D7B64E29A49D4B0018D1E3 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B64D29A49D4B0018D1E3 /* BaseCoordinator.swift */; };
+		09D7B65329A49E180018D1E3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B65229A49E180018D1E3 /* App.swift */; };
+		09D7B65829A4A06C0018D1E3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B65729A4A06C0018D1E3 /* AppCoordinator.swift */; };
+		09D7B65D29A4A0E30018D1E3 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B65C29A4A0E30018D1E3 /* Resolver.swift */; };
+		09D7B65F29A4A0F20018D1E3 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B65E29A4A0F20018D1E3 /* ServiceAssembly.swift */; };
+		09D7B66129A4A1010018D1E3 /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B66029A4A1010018D1E3 /* CoordinatorAssembly.swift */; };
+		09D7B66329A4A1430018D1E3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B66229A4A1430018D1E3 /* Router.swift */; };
+		09D7B66B29A4AA3A0018D1E3 /* TVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B66A29A4AA3A0018D1E3 /* TVError.swift */; };
+		09D7B66D29A4AA900018D1E3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B66C29A4AA900018D1E3 /* Network.swift */; };
+		09D7B66F29A4AAAE0018D1E3 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B66E29A4AAAE0018D1E3 /* NetworkClient.swift */; };
+		09D7B67329A4AB600018D1E3 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B67229A4AB600018D1E3 /* EndpointProtocol.swift */; };
+		09D7B67829A4B0290018D1E3 /* OnAirTvSeriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7B67729A4B0290018D1E3 /* OnAirTvSeriesEndpoint.swift */; };
+		4D5905504039024A1C898428 /* Pods_TVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5D163E7A4018A1D226F315 /* Pods_TVApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09D7B62229A4982F0018D1E3 /* TVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D7B62529A4982F0018D1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D7B62729A4982F0018D1E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09D7B62929A4982F0018D1E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09D7B62C29A4982F0018D1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09D7B62E29A498300018D1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D7B63129A498300018D1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D7B63329A498300018D1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D7B63D29A49B850018D1E3 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		09D7B63F29A49B960018D1E3 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		09D7B64129A49BA20018D1E3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		09D7B64329A49BB20018D1E3 /* TabBarPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresentable.swift; sourceTree = "<group>"; };
+		09D7B64629A49BF30018D1E3 /* NSObject + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extension.swift"; sourceTree = "<group>"; };
+		09D7B64B29A49D360018D1E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		09D7B64D29A49D4B0018D1E3 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		09D7B65229A49E180018D1E3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		09D7B65729A4A06C0018D1E3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		09D7B65C29A4A0E30018D1E3 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		09D7B65E29A4A0F20018D1E3 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		09D7B66029A4A1010018D1E3 /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
+		09D7B66229A4A1430018D1E3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		09D7B66A29A4AA3A0018D1E3 /* TVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVError.swift; sourceTree = "<group>"; };
+		09D7B66C29A4AA900018D1E3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		09D7B66E29A4AAAE0018D1E3 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		09D7B67229A4AB600018D1E3 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		09D7B67729A4B0290018D1E3 /* OnAirTvSeriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAirTvSeriesEndpoint.swift; sourceTree = "<group>"; };
+		2EA0C127E91248A027228A50 /* Pods-TVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVApp.release.xcconfig"; path = "Target Support Files/Pods-TVApp/Pods-TVApp.release.xcconfig"; sourceTree = "<group>"; };
+		3B5D163E7A4018A1D226F315 /* Pods_TVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D263A2A54D9375405C8872D1 /* Pods-TVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVApp.debug.xcconfig"; path = "Target Support Files/Pods-TVApp/Pods-TVApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5905504039024A1C898428 /* Pods_TVApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +79,8 @@
 			children = (
 				09D7B62429A4982F0018D1E3 /* TVApp */,
 				09D7B62329A4982F0018D1E3 /* Products */,
+				83CCD27DA28EDFE7F611CC4C /* Pods */,
+				31A52316D21EFC1303F1DA4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +95,208 @@
 		09D7B62429A4982F0018D1E3 /* TVApp */ = {
 			isa = PBXGroup;
 			children = (
-				09D7B62529A4982F0018D1E3 /* AppDelegate.swift */,
-				09D7B62729A4982F0018D1E3 /* SceneDelegate.swift */,
-				09D7B62929A4982F0018D1E3 /* ViewController.swift */,
-				09D7B62B29A4982F0018D1E3 /* Main.storyboard */,
+				09D7B63929A498D30018D1E3 /* MainDelegates */,
+				09D7B63A29A49B4C0018D1E3 /* Protocols */,
+				09D7B64829A49CD20018D1E3 /* Base */,
+				09D7B65A29A4A08E0018D1E3 /* Logic */,
+				09D7B66529A4A4930018D1E3 /* Models */,
+				09D7B66429A4A4870018D1E3 /* UI */,
+				09D7B66629A4A49E0018D1E3 /* Networking */,
+				09D7B64529A49BD80018D1E3 /* Extensions */,
 				09D7B62E29A498300018D1E3 /* Assets.xcassets */,
 				09D7B63029A498300018D1E3 /* LaunchScreen.storyboard */,
 				09D7B63329A498300018D1E3 /* Info.plist */,
 			);
 			path = TVApp;
+			sourceTree = "<group>";
+		};
+		09D7B63929A498D30018D1E3 /* MainDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B62529A4982F0018D1E3 /* AppDelegate.swift */,
+				09D7B62729A4982F0018D1E3 /* SceneDelegate.swift */,
+			);
+			path = MainDelegates;
+			sourceTree = "<group>";
+		};
+		09D7B63A29A49B4C0018D1E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B63D29A49B850018D1E3 /* StoryboardLoadable.swift */,
+				09D7B63F29A49B960018D1E3 /* Presentable.swift */,
+				09D7B64129A49BA20018D1E3 /* Coordinator.swift */,
+				09D7B64329A49BB20018D1E3 /* TabBarPresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		09D7B64529A49BD80018D1E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B64629A49BF30018D1E3 /* NSObject + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		09D7B64829A49CD20018D1E3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B64A29A49D1A0018D1E3 /* Coordinator */,
+				09D7B64929A49D0D0018D1E3 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		09D7B64929A49D0D0018D1E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B64B29A49D360018D1E3 /* BaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		09D7B64A29A49D1A0018D1E3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B64D29A49D4B0018D1E3 /* BaseCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		09D7B65129A49E060018D1E3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B65229A49E180018D1E3 /* App.swift */,
+				09D7B65629A49E340018D1E3 /* AppCoordinator */,
+				09D7B65429A49E1D0018D1E3 /* Assemblies */,
+				09D7B65529A49E260018D1E3 /* Navigation */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		09D7B65429A49E1D0018D1E3 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B65C29A4A0E30018D1E3 /* Resolver.swift */,
+				09D7B65E29A4A0F20018D1E3 /* ServiceAssembly.swift */,
+				09D7B66029A4A1010018D1E3 /* CoordinatorAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		09D7B65529A49E260018D1E3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B66229A4A1430018D1E3 /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		09D7B65629A49E340018D1E3 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B65729A4A06C0018D1E3 /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		09D7B65A29A4A08E0018D1E3 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B65B29A4A0A00018D1E3 /* Services */,
+				09D7B65129A49E060018D1E3 /* Application */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		09D7B65B29A4A0A00018D1E3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		09D7B66429A4A4870018D1E3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		09D7B66529A4A4930018D1E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B67929A4B2060018D1E3 /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09D7B66629A4A49E0018D1E3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B66929A4AA1F0018D1E3 /* Network */,
+				09D7B66829A4AA150018D1E3 /* Error */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		09D7B66829A4AA150018D1E3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B66A29A4AA3A0018D1E3 /* TVError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		09D7B66929A4AA1F0018D1E3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B67129A4AB380018D1E3 /* Endpoints */,
+				09D7B67029A4AB2E0018D1E3 /* EndpointProtocol */,
+				09D7B66C29A4AA900018D1E3 /* Network.swift */,
+				09D7B66E29A4AAAE0018D1E3 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		09D7B67029A4AB2E0018D1E3 /* EndpointProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B67229A4AB600018D1E3 /* EndpointProtocol.swift */,
+			);
+			path = EndpointProtocol;
+			sourceTree = "<group>";
+		};
+		09D7B67129A4AB380018D1E3 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				09D7B67729A4B0290018D1E3 /* OnAirTvSeriesEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		09D7B67929A4B2060018D1E3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		31A52316D21EFC1303F1DA4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B5D163E7A4018A1D226F315 /* Pods_TVApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83CCD27DA28EDFE7F611CC4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D263A2A54D9375405C8872D1 /* Pods-TVApp.debug.xcconfig */,
+				2EA0C127E91248A027228A50 /* Pods-TVApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09D7B63629A498300018D1E3 /* Build configuration list for PBXNativeTarget "TVApp" */;
 			buildPhases = (
+				71876DDF80A5D3E0479AD663 /* [CP] Check Pods Manifest.lock */,
 				09D7B61E29A4982F0018D1E3 /* Sources */,
 				09D7B61F29A4982F0018D1E3 /* Frameworks */,
 				09D7B62029A4982F0018D1E3 /* Resources */,
+				EEEE4CD932DEDCB48DDB4715 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +337,7 @@
 				};
 			};
 			buildConfigurationList = 09D7B61D29A4982F0018D1E3 /* Build configuration list for PBXProject "TVApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,19 +361,77 @@
 			files = (
 				09D7B63229A498300018D1E3 /* LaunchScreen.storyboard in Resources */,
 				09D7B62F29A498300018D1E3 /* Assets.xcassets in Resources */,
-				09D7B62D29A4982F0018D1E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71876DDF80A5D3E0479AD663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEEE4CD932DEDCB48DDB4715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVApp/Pods-TVApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVApp/Pods-TVApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVApp/Pods-TVApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09D7B61E29A4982F0018D1E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D7B62A29A4982F0018D1E3 /* ViewController.swift in Sources */,
+				09D7B67329A4AB600018D1E3 /* EndpointProtocol.swift in Sources */,
+				09D7B65829A4A06C0018D1E3 /* AppCoordinator.swift in Sources */,
+				09D7B65F29A4A0F20018D1E3 /* ServiceAssembly.swift in Sources */,
+				09D7B64729A49BF30018D1E3 /* NSObject + Extension.swift in Sources */,
+				09D7B64E29A49D4B0018D1E3 /* BaseCoordinator.swift in Sources */,
+				09D7B65D29A4A0E30018D1E3 /* Resolver.swift in Sources */,
+				09D7B66F29A4AAAE0018D1E3 /* NetworkClient.swift in Sources */,
 				09D7B62629A4982F0018D1E3 /* AppDelegate.swift in Sources */,
+				09D7B66129A4A1010018D1E3 /* CoordinatorAssembly.swift in Sources */,
+				09D7B66329A4A1430018D1E3 /* Router.swift in Sources */,
+				09D7B67829A4B0290018D1E3 /* OnAirTvSeriesEndpoint.swift in Sources */,
+				09D7B65329A49E180018D1E3 /* App.swift in Sources */,
+				09D7B64429A49BB20018D1E3 /* TabBarPresentable.swift in Sources */,
+				09D7B66D29A4AA900018D1E3 /* Network.swift in Sources */,
+				09D7B64029A49B960018D1E3 /* Presentable.swift in Sources */,
+				09D7B64229A49BA20018D1E3 /* Coordinator.swift in Sources */,
+				09D7B66B29A4AA3A0018D1E3 /* TVError.swift in Sources */,
+				09D7B64C29A49D360018D1E3 /* BaseViewController.swift in Sources */,
+				09D7B63E29A49B850018D1E3 /* StoryboardLoadable.swift in Sources */,
 				09D7B62829A4982F0018D1E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +439,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		09D7B62B29A4982F0018D1E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09D7B62C29A4982F0018D1E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		09D7B63029A498300018D1E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +566,7 @@
 		};
 		09D7B63729A498300018D1E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D263A2A54D9375405C8872D1 /* Pods-TVApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +595,7 @@
 		};
 		09D7B63829A498300018D1E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA0C127E91248A027228A50 /* Pods-TVApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

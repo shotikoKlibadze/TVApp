@@ -1,0 +1,24 @@
+PODS:
+  - Kingfisher (7.5.0)
+  - ProgressHUD (13.6.2)
+  - Swinject (2.8.2)
+
+DEPENDENCIES:
+  - Kingfisher
+  - ProgressHUD
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - ProgressHUD
+    - Swinject
+
+SPEC CHECKSUMS:
+  Kingfisher: b9c2a4a4af2990a768445c277359b27bde287d71
+  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
+
+PODFILE CHECKSUM: 2822ce34b0dc897367bd7ef7a80514378fccf959
+
+COCOAPODS: 1.11.3
