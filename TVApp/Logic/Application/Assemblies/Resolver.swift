@@ -13,9 +13,14 @@ extension App {
     final class DIResolver {
         
         static func resolveDependencies() -> Assembler? {
-            let moduleAssembly = [Assembly]()
+            
+            let topRatedTvSeriesFlow: [Assembly] = [UI.TopRatedTvSeries.Assembly()]
+            let onAirTvSeriesFlow: [Assembly] = [UI.OnAirTvSeries.Assembly()]
+            
+            let moduleAssembly = topRatedTvSeriesFlow + onAirTvSeriesFlow
             
             let moduleAssembler = Assembler(moduleAssembly, parent: resolveServices())
+            
             let assembler = Assembler([CoordinatorAssembly()], parent: moduleAssembler)
             
             return assembler
