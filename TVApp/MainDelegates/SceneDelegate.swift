@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     lazy var rootController: UINavigationController = {
         let rootController = UINavigationController()
+        rootController.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = rootController
         window?.makeKeyAndVisible()
         return rootController

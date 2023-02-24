@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol TopRatedTvSeriesPresenter: Presentable {}
+protocol TopRatedTvSeriesPresenter: Presentable, TabBarPresentable {}
 
 protocol TopRatedTvSeriesPresenterOutput: AnyObject {}

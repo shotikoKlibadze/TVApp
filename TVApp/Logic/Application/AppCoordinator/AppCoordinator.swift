@@ -19,8 +19,25 @@ extension App {
         }
 
         override func start(animated: Bool) {
-            
+            startMainFlow(animated: animated)
         }
-        
     }
+}
+
+private extension App.Coordinator {
+    
+    func startMainFlow(animated: Bool) {
+        guard let coordinator = coordinatorResolver
+                .resolve(MainCoordinator.self, arguments: router, self as MainCoordinatorOutput)
+        else {
+            assertionFailure("Failed to resolve \(MainCoordinator.self)")
+            return
+        }
+
+        addDependency(coordinator)
+        coordinator.start(animated: animated)
+    }
+}
+
+extension App.Coordinator: MainCoordinatorOutput {
 }

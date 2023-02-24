@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol OnAirTvSeriesPresenter: Presentable {}
+protocol OnAirTvSeriesPresenter: Presentable, TabBarPresentable {}
 
 protocol OnAirTvSeriesPresenterOutput: AnyObject {}

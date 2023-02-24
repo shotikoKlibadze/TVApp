@@ -21,5 +21,23 @@ final class CoordinatorAssembly: Assembly {
             coordinator.coordinatorResolver = resolver
             return coordinator
         }.inObjectScope(.container)
+        
+        //MARK: - Tab Bar
+        container.register(MainCoordinator.self) { (resolver, router: Router?, output: MainCoordinatorOutput) in
+            let coordinator = MainCoordinator()
+            coordinator.router = router
+            coordinator.coordinatorResolver = resolver
+            coordinator.output = output
+            return coordinator
+        }
+    
+        //MARK: - Tab Bar
+        container.register(TabBarCoordinator.self) { (resolver, router: Router?, output: TabBarCoordinatorOutput) in
+            let coordinator = TabBarCoordinator()
+            coordinator.router = router
+            coordinator.resolver = resolver
+            coordinator.output = output
+            return coordinator
+        }
     }
 }
