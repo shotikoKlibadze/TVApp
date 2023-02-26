@@ -75,8 +75,8 @@
 		09D7B64129A49BA20018D1E3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		09D7B64329A49BB20018D1E3 /* TabBarPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresentable.swift; sourceTree = "<group>"; };
 		09D7B64629A49BF30018D1E3 /* NSObject + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extension.swift"; sourceTree = "<group>"; };
-		09D7B64B29A49D360018D1E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../Base/ViewController/BaseViewController.swift; sourceTree = "<group>"; };
-		09D7B64D29A49D4B0018D1E3 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseCoordinator.swift; path = ../Base/Coordinator/BaseCoordinator.swift; sourceTree = "<group>"; };
+		09D7B64B29A49D360018D1E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		09D7B64D29A49D4B0018D1E3 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		09D7B65229A49E180018D1E3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		09D7B65729A4A06C0018D1E3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		09D7B65C29A4A0E30018D1E3 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 		09D7B6CB29A88D900018D1E3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = ../../Base/TabBarView/TabBar/TabBar.swift; sourceTree = "<group>"; };
 		09D7B6CF29A88DB80018D1E3 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TabBar.xib; path = ../../Base/TabBarView/TabBar/TabBar.xib; sourceTree = "<group>"; };
 		09D7B6D129A890220018D1E3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
-		09D7B6D329A891E80018D1E3 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarItem.swift; path = ../../Base/TabBarView/Model/TabBarItem.swift; sourceTree = "<group>"; };
-		09D7B6D929A892BD0018D1E3 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarItemView.swift; path = ../../Base/TabBarView/TabBarItemView/TabBarItemView.swift; sourceTree = "<group>"; };
-		09D7B6DD29A893BA0018D1E3 /* TabBarItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TabBarItemView.xib; path = ../../Base/TabBarView/TabBarItemView/TabBarItemView.xib; sourceTree = "<group>"; };
+		09D7B6D329A891E80018D1E3 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		09D7B6D929A892BD0018D1E3 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		09D7B6DD29A893BA0018D1E3 /* TabBarItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarItemView.xib; sourceTree = "<group>"; };
 		2EA0C127E91248A027228A50 /* Pods-TVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVApp.release.xcconfig"; path = "Target Support Files/Pods-TVApp/Pods-TVApp.release.xcconfig"; sourceTree = "<group>"; };
 		3B5D163E7A4018A1D226F315 /* Pods_TVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D263A2A54D9375405C8872D1 /* Pods-TVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVApp.debug.xcconfig"; path = "Target Support Files/Pods-TVApp/Pods-TVApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,7 +215,8 @@
 			children = (
 				09D7B64B29A49D360018D1E3 /* BaseViewController.swift */,
 			);
-			path = ViewController;
+			name = ViewController;
+			path = Base/ViewController;
 			sourceTree = "<group>";
 		};
 		09D7B64A29A49D1A0018D1E3 /* Coordinator */ = {
@@ -223,7 +224,8 @@
 			children = (
 				09D7B64D29A49D4B0018D1E3 /* BaseCoordinator.swift */,
 			);
-			path = Coordinator;
+			name = Coordinator;
+			path = Base/Coordinator;
 			sourceTree = "<group>";
 		};
 		09D7B65129A49E060018D1E3 /* Application */ = {
@@ -538,7 +540,8 @@
 				09D7B6D829A892AB0018D1E3 /* TabBarItemView */,
 				09D7B6D529A891F50018D1E3 /* TabBar */,
 			);
-			path = TabBarView;
+			name = TabBarView;
+			path = Base/TabBarView;
 			sourceTree = "<group>";
 		};
 		09D7B6D529A891F50018D1E3 /* TabBar */ = {
