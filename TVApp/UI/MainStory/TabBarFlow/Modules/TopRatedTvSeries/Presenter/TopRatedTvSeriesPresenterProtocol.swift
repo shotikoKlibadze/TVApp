@@ -7,6 +7,9 @@
 
 import Foundation
 
-protocol TopRatedTvSeriesPresenter: Presentable, TabBarPresentable {}
+protocol TopRatedTvSeriesPresenter: Presentable, TabBarPresentable {
+}
 
-protocol TopRatedTvSeriesPresenterOutput: AnyObject {}
+protocol TopRatedTvSeriesPresenterOutput: AnyObject {
+    func topRatedPresenterDidShow(tvSeries: TvSeries)
+}

@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol TabBarCoordinatorOutput: AnyObject {}
+protocol TabBarCoordinatorOutput: AnyObject {
+    func coordinatorDidRunDetailsFlow(tvSeries: TvSeries)
+}

@@ -47,17 +47,20 @@ private extension TabBarCoordinator {
         }
         return presenter
     }
+
 }
 
-
 extension TabBarCoordinator: TabBarPresenterOutput {
-    
 }
 
 extension TabBarCoordinator: OnAirTvSeriesPresenterOutput {
-    
+    func onAirPresenterDidShow(tvSeries: TvSeries) {
+        output?.coordinatorDidRunDetailsFlow(tvSeries: tvSeries)
+    }
 }
 
 extension TabBarCoordinator: TopRatedTvSeriesPresenterOutput {
-    
+    func topRatedPresenterDidShow(tvSeries: TvSeries) {
+        output?.coordinatorDidRunDetailsFlow(tvSeries: tvSeries)
+    }
 }

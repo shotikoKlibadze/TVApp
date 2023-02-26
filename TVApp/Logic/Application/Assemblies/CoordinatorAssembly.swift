@@ -22,7 +22,7 @@ final class CoordinatorAssembly: Assembly {
             return coordinator
         }.inObjectScope(.container)
         
-        //MARK: - Tab Bar
+        //MARK: - Main
         container.register(MainCoordinator.self) { (resolver, router: Router?, output: MainCoordinatorOutput) in
             let coordinator = MainCoordinator()
             coordinator.router = router
@@ -37,6 +37,16 @@ final class CoordinatorAssembly: Assembly {
             coordinator.router = router
             coordinator.resolver = resolver
             coordinator.output = output
+            return coordinator
+        }
+        
+        //MARK: - Details
+        container.register(SeriesDetialsCoordinator.self) { (resolver, router: Router?, output: SeriesDetialsCoordinatorOutput, series: TvSeries) in
+            let coordinator = SeriesDetialsCoordinator()
+            coordinator.router = router
+            coordinator.resolver = resolver
+            coordinator.output = output
+            coordinator.tvSeries = series
             return coordinator
         }
     }

@@ -28,8 +28,26 @@ private extension MainCoordinator {
         addDependency(coordinator)
         coordinator.start(animated: animated)
     }
+    
+    func runDetailsFlow(animated: Bool, tvSeries: TvSeries) {
+        guard let coordinator = coordinatorResolver.resolve(SeriesDetialsCoordinator.self, arguments: router, self as SeriesDetialsCoordinatorOutput , tvSeries) else {
+            assertionFailure("Failed to resolve \(TabBarCoordinator.self)")
+            return
+        }
+        addDependency(coordinator)
+        coordinator.start(animated: animated)
+    }
 }
 
 extension MainCoordinator: TabBarCoordinatorOutput {
-    
+    func coordinatorDidRunDetailsFlow(tvSeries: TvSeries) {
+        runDetailsFlow(animated: true, tvSeries: tvSeries)
+    }
+}
+
+extension MainCoordinator: SeriesDetialsCoordinatorOutput {
+    func detailsCoordinatorDidFinis(_ coordinator: SeriesDetialsCoordinator) {
+        removeDependency(coordinator)
+        router.popModule()
+    }
 }

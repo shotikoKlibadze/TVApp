@@ -1,27 +1,29 @@
 //
-//  TopRatedTvSeriesAssembly.swift
+//  SeriesDetailsAssembly.swift
 //  TVApp
 //
-//  Created by Shotiko Klibadze on 22.02.23.
+//  Created by Shotiko Klibadze on 26.02.23.
 //
 
+import Foundation
 import Swinject
 
-extension UI.TopRatedTvSeries {
+extension UI.SeriesDetails {
     
     final class Assembly: Swinject.Assembly {
 
-        typealias View = TopRatedTvSeriesViewController
-        typealias Output = TopRatedTvSeriesPresenterOutput
+        typealias View = SeriesDetailsViewController
+        typealias Output = SeriesDetailsPresenterOuput
+        typealias Series = TvSeries
         
         func assemble(container: Swinject.Container) {
-            container.register(Presenter.self) { (resolver, output: Output) in
+            container.register(Presenter.self) { (resolver, output: Output, series: Series) in
                 let presenter = Presenter()
                 let viewController = View.loadFromStoryboard()
                 viewController.output = presenter
                 presenter.view = viewController
                 presenter.output = output
-                presenter.service = resolver.resolve(TopRatedTvSeriesService.self)
+                presenter.tvSeries = series
                 return presenter
             }
         }

@@ -10,6 +10,14 @@ import Swinject
 final class ServiceAssembly: Assembly {
     
     func assemble(container: Swinject.Container) {
+        container.register(OnAirTvSeriesService.self) { _ in
+            let service = OnAirTvSeriesRemoteDataRepository()
+            return service
+        }
         
+        container.register(TopRatedTvSeriesService.self) { _ in
+            let service = TopRatedTvSeriesRemoteDataRepository()
+            return service
+        }
     }
 }

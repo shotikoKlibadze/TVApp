@@ -17,10 +17,12 @@ extension App {
             let topRatedTvSeriesFlow: [Assembly] = [UI.TopRatedTvSeries.Assembly()]
             let onAirTvSeriesFlow: [Assembly] = [UI.OnAirTvSeries.Assembly()]
             let tabBarFlow: [Assembly] = [UI.TabBar.Assembly()]
+            let detailsFlow: [Assembly] = [UI.SeriesDetails.Assembly()]
             
             let moduleAssembly = topRatedTvSeriesFlow
             + onAirTvSeriesFlow
             + tabBarFlow
+            + detailsFlow
             
             let moduleAssembler = Assembler(moduleAssembly, parent: resolveServices())
             

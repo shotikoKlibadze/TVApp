@@ -7,9 +7,13 @@
 
 import Foundation
 
-protocol TopRatedTvSeriesView: Presentable {}
+protocol TopRatedTvSeriesView: Presentable {
+    func setupView()
+}
 
 protocol TopRatedTvSeriesViewOutput: AnyObject {
     func viewDidLoad()
-    func viewDidTapTvSeries()
+    func viewDidTapTvSeries(at index: Int)
+    func viewDidGetTvSeriesCount() -> Int
+    func viewDidGetTvSeriesToShow() -> [TvSeries]
 }

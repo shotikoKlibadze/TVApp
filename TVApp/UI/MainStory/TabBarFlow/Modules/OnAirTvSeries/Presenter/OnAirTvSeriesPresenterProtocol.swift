@@ -9,4 +9,6 @@ import Foundation
 
 protocol OnAirTvSeriesPresenter: Presentable, TabBarPresentable {}
 
-protocol OnAirTvSeriesPresenterOutput: AnyObject {}
+protocol OnAirTvSeriesPresenterOutput: AnyObject {
+    func onAirPresenterDidShow(tvSeries: TvSeries)
+}

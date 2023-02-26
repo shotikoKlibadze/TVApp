@@ -15,4 +15,6 @@ struct UI {
     
     struct TopRatedTvSeries {}
     
+    struct SeriesDetails {}
+    
 }

@@ -21,6 +21,7 @@ extension UI.OnAirTvSeries {
                 viewController.output = presenter
                 presenter.view = viewController
                 presenter.output = output
+                presenter.service = resolver.resolve(OnAirTvSeriesService.self)
                 return presenter
             }
         }

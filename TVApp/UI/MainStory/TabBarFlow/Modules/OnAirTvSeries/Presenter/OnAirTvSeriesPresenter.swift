@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 extension UI.OnAirTvSeries {
     
@@ -14,6 +15,7 @@ extension UI.OnAirTvSeries {
         weak var output: OnAirTvSeriesPresenterOutput?
         var view: OnAirTvSeriesView!
         var service: OnAirTvSeriesService!
+        var tvSeries: [TvSeries] = []
     }
 }
 
@@ -39,11 +41,35 @@ extension UI.OnAirTvSeries.Presenter: OnAirTvSeriesPresenter {
 
 extension UI.OnAirTvSeries.Presenter: OnAirTvSeriesViewOutput {
     
-    func viewDidLoad() {
-        
+    func viewDidGetTvSeriesCount() -> Int {
+        return tvSeries.count
     }
     
-    func viewDidTapTvSeries() {
-        
+    func viewDidGetTvSeriesToShow() -> [TvSeries] {
+        return tvSeries
+    }
+    
+    func viewDidLoad() {
+        ProgressHUD.show()
+        Task {
+            let result = await service.getTvSeriesOnAir()
+            switch result {
+            case .success(let tvSeries):
+                self.tvSeries = tvSeries
+                print(tvSeries.count)
+                DispatchQueue.main.async {
+                    self.view.setupView()
+                }
+                await ProgressHUD.dismiss()
+            case .failure(let err):
+                print(err.localizedDescription)
+                await ProgressHUD.showError()
+            }
+        }
+    }
+    
+    func viewDidTapTvSeries(at index: Int) {
+        let tvSeries = tvSeries[index]
+        output?.onAirPresenterDidShow(tvSeries: tvSeries)
     }
 }
