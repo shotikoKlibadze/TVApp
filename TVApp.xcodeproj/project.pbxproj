@@ -113,8 +113,8 @@
 		09D7B6C429A5F3EA0018D1E3 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		09D7B6C629A5F3F30018D1E3 /* TabBarPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenterProtocol.swift; sourceTree = "<group>"; };
 		09D7B6C829A5F52A0018D1E3 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
-		09D7B6CB29A88D900018D1E3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = ../../Base/TabBarView/TabBar/TabBar.swift; sourceTree = "<group>"; };
-		09D7B6CF29A88DB80018D1E3 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TabBar.xib; path = ../../Base/TabBarView/TabBar/TabBar.xib; sourceTree = "<group>"; };
+		09D7B6CB29A88D900018D1E3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		09D7B6CF29A88DB80018D1E3 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
 		09D7B6D129A890220018D1E3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		09D7B6D329A891E80018D1E3 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		09D7B6D929A892BD0018D1E3 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
